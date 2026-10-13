@@ -1,0 +1,4 @@
+interface:
+  display_name: "SourceCompass"
+  short_description: "Find local repository and npm package source paths"
+  default_prompt: "Use $source-compass to locate the local source for the dependency needed by this task."

@@ -1,0 +1,28 @@
+{
+  "name": "source-compass",
+  "version": "0.1.0",
+  "description": "Discover local repositories and npm package sources for AI agents",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrewuetyang/source-compass.git"
+  },
+  "homepage": "https://github.com/Andrewuetyang/source-compass#readme",
+  "bugs": { "url": "https://github.com/Andrewuetyang/source-compass/issues" },
+  "license": "MIT",
+  "author": { "name": "Andrewetyang" },
+  "keywords": ["ai", "agents", "source-code", "workspace", "git", "worktree", "cli", "skills"],
+  "type": "module",
+  "bin": { "source-compass": "dist/cli.js", "workspace-resolver": "dist/cli.js" },
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "skills", "README.md", "LICENSE"],
+  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org/" },
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "yarn build && node --test tests/*.test.mjs",
+    "prepack": "yarn build"
+  },
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "~5.9.3" }
+}
