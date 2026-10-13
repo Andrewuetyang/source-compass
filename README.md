@@ -178,4 +178,4 @@ yarn pack --filename source-compass-0.1.0.tgz
 
 ## 许可证
 
-本项目使用 [MIT License](LICENSE)。版权署名为当前项目 Git 用户 `yangfeng1`。
+本项目使用 [MIT License](LICENSE)。
